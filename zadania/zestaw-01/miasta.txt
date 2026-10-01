@@ -1,0 +1,15 @@
+Lublin, 23.6
+Warszawa, 21.3
+Świdnik, 23.5
+Rzym, 29.9
+Lubartów, 23.3
+Łęczna, 23.4
+Tokio, 20.1
+Londyn, 15.8
+Ateny, 34.5
+Kraków, 24.1
+Szczecin, 17.6
+Helsinki, 16.5
+Buenos Aires, 9.9
+Sydney, 14.4
+Nowy Jork, 21.3

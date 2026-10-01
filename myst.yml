@@ -10,6 +10,10 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: index.md
+    - title: Zestawy zadań
+      children:
+        - file: zadania/zestaw-01/temperatury.md
+          title: Zestaw 1 - Powtórzenie z list, krotek, słowników, wyjątków i plików tekstowych
 site:
   template: book-theme
   options:
