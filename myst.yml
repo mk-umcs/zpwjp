@@ -1,0 +1,18 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 184e2b67-c7b4-4fd4-b2e5-db159694711d
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  # github: https://github.com/mk-umcs/zpwjp-zadania
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: index.md
+site:
+  template: book-theme
+  options:
+    logo_text: Zaawansowane programowanie w języku Python
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
