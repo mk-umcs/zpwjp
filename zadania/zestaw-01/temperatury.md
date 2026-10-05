@@ -75,7 +75,7 @@ ValueError: pusta lista
 
 ## 4. Parsowanie danych
 
-W pliku tekstowym w każdym wierszu znajduje się nazwa miasta oraz temperatura po spacji. Przykładowy plik z miastami ([`miasta.txt`](miasta.txt), kodowanie to UTF-8) może wyglądać tak: 
+W pliku tekstowym w każdym wierszu znajduje się nazwa miasta oraz temperatura po spacji. Przykładowy plik z miastami ([`miasta.txt`](./miasta.txt), kodowanie to UTF-8) może wyglądać tak: 
 
 ```text
 Lublin, 23.6
@@ -162,7 +162,7 @@ Napisz program, który:
 1. Pyta użytkownika o nazwę pliku z danymi temperaturowymi.
 2. Wczytuje dane do słownika.
 3. W pętli pyta użytkownika o nazwy miast.
-4. Dla każdego miasta wyświetla temperaturę lub komunikat o braku danych.
+4. Dla każdego  wyświetla temperaturę lub komunikat o braku danych.
 5. Po wprowadzeniu pustego napisu oblicza i wyświetla średnią temperaturę dla wszystkich miast, o które pytał użytkownik. Średnia jest liczona i wyświetlana tylko jeżeli użytkownik dostał przynajmniej jedą odpowiedź na pytanie o temperaturę. Temperatury mają być wyświetlane z jednym miejscem po przecinku. Miasto jest do średniej liczone raz nawet jeżeli użytkownik pytał o nie wielokrotnie.
 6. Program powinien obsługiwać błędy (brak pliku, błędny format danych, itp.)
 
@@ -211,7 +211,7 @@ Podaj nazwę pliku z danymi: nie-ma-takiego-pliku.txt
 Nie mogę otworzyć pliku "nie-ma-takiego-pliku.txt".
 ```
 
-Dla pliku z błędną zawartością, np. takiego jak poniższy plik [`miasta-z-bledami.txt`](miasta-z-bledami.txt) (brak przecinków między nazwą miasta a temperaturą)
+Dla pliku z błędną zawartością, np. takiego jak poniższy plik [`miasta-z-bledami.txt`](./miasta-z-bledami.txt) (brak przecinków między nazwą miasta a temperaturą)
 ```text
 Lublin 23.6
 Warszawa 21.3
