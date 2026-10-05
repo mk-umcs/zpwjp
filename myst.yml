@@ -17,6 +17,6 @@ project:
 site:
   template: book-theme
   options:
-    logo_text: Zaawansowane programowanie w języku Python
+    logo_text: Geoinformatyka, Zaawansowane programowanie w języku Python
   #   favicon: favicon.ico
   #   logo: site_logo.png
