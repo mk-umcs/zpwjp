@@ -1,4 +1,4 @@
-# Temperatury w miastach
+# Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
 
 ## 1. Wyszukiwanie temperatury w liście krotek
 
@@ -11,7 +11,7 @@ Funkcja zwraca temperaturę dla zadanego miasta. Jeśli miasto nie występuje na
 
 **Przykład użycia:**
 
-```
+```python-repl
 >>> temperatury = [('Lublin', 23.6), ('Świdnik', 23.5), ('Lubartów', 23.3), ('Łęczna', 23.4)]
 >>> znajdz_temperature_w_liscie(temperatury, 'Tokio')  # zwraca None
 >>> znajdz_temperature_w_liscie(temperatury, 'Lubartów')
@@ -29,7 +29,7 @@ Funkcja zwraca temperaturę dla zadanego miasta. Jeśli miasto nie występuje w 
 
 **Przykład użycia:**
 
-```
+```python-repl
 >>> temperatury = {'Lublin': 23.6, 'Świdnik': 23.5, 'Lubartów': 23.3, 'Łęczna': 23.4}
 >>> znajdz_temperature_w_slowniku(temperatury, 'Nowy Jork')  # zwraca None
 >>> znajdz_temperature_w_slowniku(temperatury, 'Łęczna')
@@ -53,7 +53,8 @@ Napisz dwie funkcje do obliczania średniej temperatury dla listy miast:
     - Zgłasza wyjątek `ValueError` gdy brak danych dla któregoś miasta lub lista miast jest pusta
 
 **Przykład użycia:**
-```
+
+```python-repl
 >>> temperatury_lista = [('Lublin', 23.6), ('Świdnik', 23.5), ('Lubartów', 23.3), ('Łęczna', 23.4)]
 >>> temperatury_slownik = {'Lublin': 23.6, 'Świdnik': 23.5, 'Lubartów': 23.3, 'Łęczna': 23.4}
 
@@ -77,22 +78,7 @@ ValueError: pusta lista
 
 W pliku tekstowym w każdym wierszu znajduje się nazwa miasta oraz temperatura po spacji. Przykładowy plik z miastami ([`miasta.txt`](/zestaw-01/miasta.txt), kodowanie to UTF-8) może wyglądać tak:
 
-```text
-Lublin, 23.6
-Warszawa, 21.3
-Świdnik, 23.5
-Rzym, 29.9
-Lubartów, 23.3
-Łęczna, 23.4
-Tokio, 20.1
-Londyn, 15.8
-Ateny, 34.5
-Kraków, 24.1
-Szczecin, 17.6
-Helsinki, 16.5
-Buenos Aires, 9.9
-Sydney, 14.4
-Nowy Jork, 21.3
+```{literalinclude} zestaw-01/miasta.txt
 ```
 
 Napisz funkcję `parsuj_dane_temperaturowe`, która:
@@ -103,7 +89,7 @@ Napisz funkcję `parsuj_dane_temperaturowe`, która:
 
 **Przykład użycia:**
 
-```
+```python-repl
 >>> parsuj_dane_temperaturowe("Lublin, 23.6")
 ('Lublin', 23.6)
 >>> parsuj_dane_temperaturowe("Warszawa, 21.3")
@@ -140,7 +126,7 @@ Napisz dwie funkcje do wczytywania danych temperaturowych z pliku:
     - Zwraca: słownik `{nazwa_miasta: temperatura, ...}`
 
 **Przykład użycia:**
-```
+```python-repl
 >>> lista_temp = wczytaj_temperatury_do_listy('miasta.txt')
 >>> print(lista_temp)
 [('Lublin', 23.6), ('Warszawa', 21.3), ('Świdnik', 23.5), ...]
@@ -212,11 +198,10 @@ Nie mogę otworzyć pliku "nie-ma-takiego-pliku.txt".
 ```
 
 Dla pliku z błędną zawartością, np. takiego jak poniższy plik [`miasta-z-bledami.txt`](./miasta-z-bledami.txt) (brak przecinków między nazwą miasta a temperaturą)
-```text
-Lublin 23.6
-Warszawa 21.3
-Świdnik 23.5
+
+```{literalinclude} zestaw-01/miasta-z-bledami.txt
 ```
+
 sesja może wyglądać tak:
 ```text
 Podaj nazwę pliku z danymi: miasta-z-bledami.txt

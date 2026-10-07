@@ -10,15 +10,15 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: index.md
-    - title: Zestawy zadań
+    - title: Zadania
       children:
         - file: zadania/zestaw-01/temperatury.md
-          title: Zestaw 1 - Powtórzenie z list, krotek, słowników, wyjątków i plików tekstowych
+          title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
   static_files:
     - zadania/zestaw-01/zestaw-01
 site:
   template: book-theme
   options:
-    logo_text: Geoinformatyka, Zaawansowane programowanie w języku Python
+    logo_text: Zaawansowane programowanie w języku Python (geoinformatyka)
   #   favicon: favicon.ico
   #   logo: site_logo.png

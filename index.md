@@ -1,1 +1,1 @@
-# Geoinformatyka &mdash; Zaawansowane programowanie w języku Python &mdash; zadania
+# Zaawansowane programowanie w języku Python (geoinformatyka)
