@@ -197,7 +197,7 @@ Podaj nazwę pliku z danymi: nie-ma-takiego-pliku.txt
 Nie mogę otworzyć pliku "nie-ma-takiego-pliku.txt".
 ```
 
-Dla pliku z błędną zawartością, np. takiego jak poniższy plik [`miasta-z-bledami.txt`](./miasta-z-bledami.txt) (brak przecinków między nazwą miasta a temperaturą)
+Dla pliku z błędną zawartością, np. takiego jak poniższy plik [`miasta-z-bledami.txt`](/zestaw-01/miasta-z-bledami.txt) (brak przecinków między nazwą miasta a temperaturą)
 
 ```{literalinclude} zestaw-01/miasta-z-bledami.txt
 ```
