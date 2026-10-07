@@ -75,7 +75,7 @@ ValueError: pusta lista
 
 ## 4. Parsowanie danych
 
-W pliku tekstowym w każdym wierszu znajduje się nazwa miasta oraz temperatura po spacji. Przykładowy plik z miastami ([`miasta.txt`](./miasta.txt), kodowanie to UTF-8) może wyglądać tak: 
+W pliku tekstowym w każdym wierszu znajduje się nazwa miasta oraz temperatura po spacji. Przykładowy plik z miastami ([`miasta.txt`](/zestaw-01/miasta.txt), kodowanie to UTF-8) może wyglądać tak:
 
 ```text
 Lublin, 23.6

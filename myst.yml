@@ -14,6 +14,8 @@ project:
       children:
         - file: zadania/zestaw-01/temperatury.md
           title: Zestaw 1 - Powtórzenie z list, krotek, słowników, wyjątków i plików tekstowych
+  static_files:
+    - zadania/zestaw-01/zestaw-01
 site:
   template: book-theme
   options:
