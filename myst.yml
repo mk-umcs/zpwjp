@@ -10,13 +10,13 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: index.md
+    - title: Notebooki
+      children:
+        - file: notebooki/01-klasy-obiekty/01-klasy-obiekty.ipynb
+          title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
     - title: Zadania
       children:
         - file: zadania/zestaw-01/temperatury.md
-          title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
-    - title: Notebooki
-      children:
-        - file notebooki/01-klasy-obiekty/01-klasy-obiekty.ipynb
   static_files:
     - zadania/zestaw-01/zestaw-01
 site:
