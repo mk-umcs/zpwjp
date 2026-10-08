@@ -14,6 +14,8 @@ project:
       children:
         - file: zadania/zestaw-01/temperatury.md
           title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
+    - title: Notebooki
+        - file notebooki/01-klasy-obiekty/01-klasy-obiekty.ipynb
   static_files:
     - zadania/zestaw-01/zestaw-01
 site:
