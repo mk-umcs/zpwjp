@@ -13,10 +13,11 @@ project:
     - title: Notebooki
       children:
         - file: notebooki/01-klasy-obiekty/01-klasy-obiekty.ipynb
-          title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
+          title: Programowanie obiektowe — klasy, obiekty
     - title: Zadania
       children:
         - file: zadania/zestaw-01/temperatury.md
+          title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
   static_files:
     - zadania/zestaw-01/zestaw-01
 site:
