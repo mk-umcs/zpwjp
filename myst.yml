@@ -10,16 +10,25 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: index.md
-    - title: Notebooki
+    - title: Wykład
       children:
-        - file: notebooki/01-klasy-obiekty/01-klasy-obiekty.ipynb
+        - file: wyklad/01-klasy-obiekty/01-klasy-obiekty-wyklad.ipynb
           title: Programowanie obiektowe — klasy, obiekty
+          children:
+            - file: wyklad/01-klasy-obiekty/01-podsumowanie.md
+              title: Podsumowanie
+            - file: wyklad/01-klasy-obiekty/01-odpowiedzi.md
+              title: Odpowiedzi do ćwiczeń
+            - file: wyklad/01-klasy-obiekty/01-materialy.md
+              title: Pliki do pobrania
     - title: Zadania
       children:
         - file: zadania/zestaw-01/temperatury.md
           title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
   static_files:
     - zadania/zestaw-01/zestaw-01
+    - materialy/notebooki
+    - materialy/notebooki-pdf
 site:
   template: book-theme
   options:
