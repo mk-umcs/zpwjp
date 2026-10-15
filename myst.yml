@@ -25,6 +25,8 @@ project:
       children:
         - file: zadania/zestaw-01/temperatury.md
           title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
+        - file: zadania/zestaw-02/klasy-obiekty.md
+          title: Zestaw 2 — Programowanie obiektowe — klasy, obiekty
   static_files:
     - zadania/zestaw-01/zestaw-01
     - materialy/notebooki
