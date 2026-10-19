@@ -1,4 +1,4 @@
-# Zadania: Klasy i obiekty
+# Programowanie obiektowe: klasy i obiekty
 
 ## 1. Trójkąty
 
@@ -99,7 +99,7 @@ Przykładowy plik (`miasta_wspolrzedne.txt`):
 ```{literalinclude} zestaw-02/miasta_wspolrzedne.txt
 ```
 
-*Wskazówka:* Plik do testów z wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
+*Wskazówka:* Plik do testów ze wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
 
 Napisz program, który:
 1. wczytuje plik z miastami,
@@ -115,18 +115,21 @@ Użyj klasy `Kolo` do reprezentowania odpowiedniego bufora wokół wybranego mia
 Zdefiniuj trzy klasy, które posłużą do gromadzenia informacji o pracownikach oraz ich kompetencjach. Pierwsze dwie z nich są klasami wyłącznie do grupowania danych.
 
 **Klasa `PelneNazwisko`**
+
 Klasa przechowująca dane osobowe. Klasa ma wyłącznie następujące składowe:
 * konstruktor,
 * pola: `imie`, `nazwisko`,
 * metody specjalne: `__str__` oraz `__repr__`.
 
 **Klasa `Umiejetnosc`**
+
 Klasa przechowująca dane o konkretnej kompetencji.
 * posiada wyłącznie konstruktor,
 * pola: `nazwa`, `poziom` (np. liczba całkowita określająca poziom zaawansowania),
 * metody specjalne `__str__` oraz `__repr__`.
 
 **Klasa `Pracownik`**
+
 Klasa reprezentująca pojedynczego pracownika w systemie.
 
 * podczas tworzenia przyjmuje tylko pełne nazwisko (obiekt klasy `PelneNazwisko`),
@@ -140,10 +143,10 @@ Klasa reprezentująca pojedynczego pracownika w systemie.
 * `ma_umiejetnosc_na_poziomie(nazwa, poziom)` — weryfikuje, czy pracownik posiada wybraną umiejętność, a jej poziom jest co najmniej taki, jak oczekiwany.
 
 
-*Wskazówka:* Przy pisaniu klasy `Pracownik` rozważ dwie różne implementacje do przechowywania kompetencji i samodzielnie wybierz optymalniejszą:
+*Wskazówka:* Przy pisaniu klasy `Pracownik` rozważ dwie różne implementacje do przechowywania kompetencji (spróbuj niezależnie zaimplementować obie):
 
-1. opartą o klasyczną listę obiektów klasy `Umiejetnosc`,
-2. opartą o słownik realizujący mapowanie typu `nazwa_umiejetnosci -> poziom`.
+1. opartą o listę obiektów klasy `Umiejetnosc`,
+2. opartą o słownik, w którym kluczami są nazwy umiejętności a wartościami &mdash; ich poziomy.
 
 ## 6. Przetwarzanie danych pracowników (pliki tekstowe)
 
@@ -151,13 +154,19 @@ Przygotuj programy przetwarzające pliki tekstowe z danymi pracowników w odpowi
 
 **Program 1**
 
-W pliku pierwsza linijka to zawsze imię i nazwisko osoby. Każdy kolejny wiersz określa posiadaną kompetencję w formacie `umiejętność: poziom`.
+W pliku pierwsza linijka to zawsze imię i nazwisko osoby. Każdy kolejny wiersz określa posiadaną kompetencję w formacie `umiejętność: poziom`. na przykład:
+
+```{literalinclude} zestaw-02/pracownik.txt
+```
 
 Napisz program, który odczytuje takie dane, pyta użytkownika o wymagany poziom, a następnie wyświetla wszystkie umiejętności pracownika równe lub wyższe wskazanemu progowi. *Wymóg:* Musisz użyć stworzonej przed chwilą instancji klasy `Pracownik` i wykorzystać jej metody logiczne do tego filtra.
 
 **Program 2**
 
-Zasada zapisu jest podobna, ale tym razem w pliku figuruje wielu pracowników naraz. Pojedynczy pusty wiersz oddziela wpisy poszczególnych osób.
+Zasada zapisu jest podobna, ale tym razem w pliku figuruje wielu pracowników naraz. Pojedynczy pusty wiersz oddziela wpisy poszczególnych osób. Przykład takiego pliku:
+
+```{literalinclude} zestaw-02/pracownicy.txt
+```
 
 1. Napisz dodatkową funkcję globalną, która przyjmuje listę obiektów klas `Pracownik` i wyciąga z nich listę samych pełnych nazwisk w postaci napisów.
-2. Stwórz program, który pyta o docelową umiejętność oraz minimalny poziom jej znajomości, a następnie (wykorzystując metodę `ma_umiejetnosc_na_poziomie` i swoją nową funkcję) zwraca same pełne nazwiska kwalifikujących się do zadania osób.
+2. Stwórz program, który pyta o docelową umiejętność oraz minimalny poziom jej znajomości, a następnie (wykorzystując metodę `ma_umiejetnosc_na_poziomie` i funkcję z poprzedniego punktu) zwraca same pełne nazwiska kwalifikujących się do zadania osób.

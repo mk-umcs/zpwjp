@@ -1,0 +1,7 @@
+Jan Kowalski
+C++: 4
+Java: 2
+Python: 5
+HTML: 5
+CSS: 3
+JavaScript: 5
