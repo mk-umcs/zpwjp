@@ -1,4 +1,3 @@
----
 
 ### Zadanie 1.3. Różne rozszerzenia modułu i klasy
 
@@ -6,8 +5,11 @@ Rozwiń moduł o nowe funkcje, a następnie rozbuduj klasę o metody z nich korz
 
 **Uwaga:** Metody w klasie nie modyfikować obiektu (pól `tablica`, `wysokosc` i `szerokosc`), na którym zostały wywołane. W razie potrzeby metoda powinna zwrócić nowy obiekt klasy `Raster`.
 
-Dodaj w module funkcje realizujące:
-1. odczyt i zapis z CSV,
+Dodaj w module następujące funkcje:
+1. Funkcja umożliwiająca wczytanie danych rastrowych z zadanego pliku tekstowego w formacie CSV. Dane zwracane są jako lista dwuwymiarowa. Funkcja powinna obsługiwać sytuacje błędne:
+    - W przypadku braku pliku: zgłasza wyjątek `FileNotFoundError`
+    - W przypadku błędów w danych: zgłasza wyjątek `ValueError`
+    
 2. obliczenie mody (wartości najczęstszej) &mdash; w przypadku wielu takich wartości funkcja może zwrócić dowolną wybraną, lub zwrócić kompletną listę takich wartości (wybierz sposób),
 3. zmniejszenie rastra o zadaną liczbę komórek z każdej strony (obcinanie brzegów),
 4. kompresja rastra - zmniejszenie rozdzielczości (np. z okna 2x2 komórek powstaje 1 komórka z wartością średnią). Komórki na niepełnych brzegach są ignorowane. W klasie metoda `kompresuj(self, okno)`, zwracająca nową instancję rastra.

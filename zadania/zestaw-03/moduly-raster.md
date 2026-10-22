@@ -80,3 +80,71 @@ Obiekt klasy `Raster` po utworzeniu powinien posiadać trzy pola:
 
 Program testujący klasę powinien robić dokładnie to samo co program testujący moduł, ale używając napisanej klasy (tam gdzie to możliwe).
 
+### Zadanie 1.3. Różne rozszerzenia modułu i klasy
+
+Rozwiń moduł o nowe funkcje, a następnie rozbuduj klasę o metody z nich korzystające.
+
+#### Funkcje modułu
+
+Poniższe funkcje modułu operują na rastrach jako listach dwuwymiarowych.
+
+1. **Wczytywanie danych z pliku**
+
+    Funkcja wczytuje dane rastrowych z pliku tekstowego w formacie CSV i zwraca je jako listę. Funkcja powinna obsługiwać sytuacje błędne:
+    - W przypadku braku pliku: zgłasza wyjątek `FileNotFoundError`
+    - W przypadku błędów w danych: zgłasza wyjątek `ValueError`
+
+    Przykładowy plik z danymi (CSV z przecinkami jako separatorami) może wyglądać tak:
+    ```
+    195.4,195.4,198.4,200.1,200.2,200.8
+    195.3,195.4,181.0,195.2,181.3,300.3
+    189.2,198.4,200.5,200.5,190.3,198.2
+    ```    
+
+2. **Zapis rastra do pliku**
+
+    Funkcja zapisuje dane rastrowe do pliku tekstowego w formacie CSV.
+
+3. **Wartość najczęstsza (moda)**
+    
+    Funkcja wyznacza wartość najczęściej występującą. Takich wartości może być wiele, więc funkcja może albo zwracać dowolną z nich, albo zawsze zwracać listę najczęściej występujących wartości.
+
+4. **Zmniejszenie rastra**
+
+    Funkcja zmniejszaja rozmiar rastra o podaną liczbę komórek z każdej strony. Funkcja nie modyfikuje otrzymanego rastra, zwraca nowy o zmniejszonym rozmiarze.
+
+5. **Kompresja rastra**
+
+    Funkcja zmniejsza rozdzielczość rastra przez wyznaczenie nowej wartości komórki jako średniej z sąsiednich pól. Funkcja otrzymuje parametr określający rozmiar okna do kompresji (np. 2 oznacza okno 2×2, 3 oznacza okno 3×3). W przypadku, gdy liczba kolumn lub wierszy nie jest podzielna przez zadany rozmiar okna, pozostałe komórki są pomijane (obcinane). Funkcja nie modyfikuje otrzymanego rastra, zwraca nowy o zmniejszonym rozmiarze.
+
+6. **Operacje z maską**
+
+    Funkcje obliczające minimum, maksimum, średnią i modę ale z dodatkowym parametrem &mdash; maską. Maska jest rastrem z wartościami logicznymi (lub liczbowymi interpretowanymi w sposób logiczny: 0  &mdash; `False`, w przeciwnym razie `True`). Funkcje uwzględniają wyłącznie komórki wskazane w masce (te, które mają wartość logiczną `True`). W przypadku maski &bdquo;pustej&rdquo; (same wartości `False`, co oznacza brak danych do obliczeń) funkcja zgłasza wyjątek `ValueError`.
+
+
+#### Metody klasy `Raster`
+
+Dopisz dodatkowe metody do klasy `Raster`:
+1. metoda `dane()` zwracająca kopię danych rastra &mdash; listę list,
+2. metoda obliczająca modę,
+3. metoda zmniejszająca raster,
+4. metoda kompresująca raster,
+5. metody do operacji z maską z dodatkowym parametrem &mdash; maską.
+
+**Uwaga:** Metody w klasie mają nie modyfikować obiektu (pól `tablica`, `wysokosc` i `szerokosc`), na którym zostały wywołane. W razie potrzeby metoda powinna zwrócić nowy obiekt klasy `Raster`.
+
+### Zadanie 1.4. Program główny
+
+Napisz program używający napisanej klasy i modułu.
+
+1. Jeżeli program został uruchomiony z parametrem wiersza poleceń , potraktuj pierwszy argument jako ścieżkę do pliku tekstowego i z niego wczytaj raster.
+
+    W przypadku błędu odczytu (wyjątki zgłoszone z modułu/klasy) program powinien wypisać sensowny komunikat i się zakończyć.
+
+2. Jeżeli programu użyto bez argumentów, wymuś ręczne wczytanie rastra od użytkownika.
+
+3. Utwórz z wczytanych danych obiekt `Raster`.
+
+4. Wyświetl w pętli menu tekstowe pozwalające użytkownikowi na wielokrotne wybieranie i wykonywanie przygotowanych operacji (wyświetlenie statystyk, wyświetlenie danych, zapisanie, itp.).
+
+
