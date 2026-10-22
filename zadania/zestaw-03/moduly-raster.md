@@ -90,7 +90,7 @@ Poniższe funkcje modułu operują na rastrach jako listach dwuwymiarowych.
 
 1. **Wczytywanie danych z pliku**
 
-    Funkcja wczytuje dane rastrowych z pliku tekstowego w formacie CSV i zwraca je jako listę. Funkcja powinna obsługiwać sytuacje błędne:
+    Funkcja wczytuje dane rastrowe z zadanego pliku tekstowego w formacie CSV i zwraca je jako listę. Funkcja powinna obsługiwać sytuacje błędne:
     - W przypadku braku pliku: zgłasza wyjątek `FileNotFoundError`
     - W przypadku błędów w danych: zgłasza wyjątek `ValueError`
 
@@ -103,11 +103,11 @@ Poniższe funkcje modułu operują na rastrach jako listach dwuwymiarowych.
 
 2. **Zapis rastra do pliku**
 
-    Funkcja zapisuje dane rastrowe do pliku tekstowego w formacie CSV.
+    Funkcja zapisuje dane rastrowe do zadanego pliku tekstowego w formacie CSV.
 
 3. **Wartość najczęstsza (moda)**
     
-    Funkcja wyznacza wartość najczęściej występującą. Takich wartości może być wiele, więc funkcja może albo zwracać dowolną z nich, albo zawsze zwracać listę najczęściej występujących wartości.
+    Funkcja wyznacza wartość najczęściej występującą w rastrze. Takich wartości może być wiele, więc funkcja może albo zwracać dowolną z nich, albo zawsze zwracać listę najczęściej występujących wartości.
 
 4. **Zmniejszenie rastra**
 
