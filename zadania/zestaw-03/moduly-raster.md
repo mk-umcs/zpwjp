@@ -21,8 +21,8 @@ Zaimplementuj następujące funkcje:
     * liczba wierszy musi być większa od 0,
     * długość każdego wiersza (liczba kolumn) musi być taka sama i większa od 0.
 
-4. **`min_maks(macierz)`** – Zwracaja krotkę z dwiema wartościami: najmniejszą i największą wartością występującą w rastrze.
-5. **`srednia(macierz)`** – Zwraca średnią arytmetyczną wszystkich elementów rastra.
+4. **`min_maks(raster)`** – Zwracaja krotkę z dwiema wartościami: najmniejszą i największą wartością występującą w rastrze.
+5. **`srednia(raster)`** – Zwraca średnią arytmetyczną wszystkich elementów rastra.
 
 **Program główny (podstawowy test modułu):**
 
@@ -54,25 +54,25 @@ Obiekt klasy `Raster` po utworzeniu powinien posiadać trzy pola:
     __init__(self, raster)
     ```
     * Otrzymuje dwuwymiarową listę.
-    * Używa funkcji `poprawny` do sprawdzenia kształtu rastra. Zgłasza wyjątek `ValueError` jeżeli kształt jest zły.
-    * Obiekt ma utworzyć swoją kopię danych przekazanych jako argument tak, żeby zapobiec ich przypadkowej modyfikacji z np. z powodu późniejszej modyfikacji tych danych. Możesz użyć funkcji `deepcopy` z modułu `copy`.
+    * Używa funkcji `poprawny()` do sprawdzenia kształtu rastra. Zgłasza wyjątek `ValueError` jeżeli kształt jest zły.
+    * Obiekt ma utworzyć swoją kopię danych przekazanych jako argument tak, żeby zapobiec ich przypadkowej modyfikacji z np. z powodu późniejszej modyfikacji tych danych. Możesz użyć funkcji `deepcopy()` z modułu `copy`.
     * Ustawia odpowiednio wartości pól `wysokosc` i `szerokosc` na podstawie wymiarów przekazanej listy.
 
 
-2. Konwersja na napis (`__str__`)
+2. Konwersja na napis: `__str__(self)`
 
-    Zwraca napis sformatowany tak jak robi to funkcja `raster_na_napis` (uży jej do implementacji metody).
+    Zwraca napis sformatowany tak jak robi to funkcja `raster_na_napis()` (uży jej do implementacji metody).
 
-3. Konwersja na tekstową reprezentację obiektu (`__repr__`)
+3. Konwersja na tekstową reprezentację obiektu: `__repr__(self)`
 
     Zwraca standardową tekstową reprezentację obiektu, przydatną dla programisty. Zwracany napis powinien mieć postać zbliżoną do wywołania konstruktora, np. `Raster([[1.0, 2.0], [3.0, 4.0]])`.
 
 4. Metody statystyczne
 
     Napisz trzy osobne metody do obliczania prostych statystyk:
-    * `min()`,
-    * `maks()`,
-    * `srednia()`.
+    * `min(self)`,
+    * `maks(self)`,
+    * `srednia(self)`.
 
     Metody nie przyjmują żadnych argumentów. Każda z metod powinna użyć odpowiedniej funkcji z modułu.
 
@@ -111,33 +111,35 @@ Poniższe funkcje modułu operują na rastrach jako listach dwuwymiarowych.
 
 4. **Zmniejszenie rastra**
 
-    Funkcja zmniejszaja rozmiar rastra o podaną liczbę komórek z każdej strony. Funkcja nie modyfikuje otrzymanego rastra, zwraca nowy o zmniejszonym rozmiarze.
+    Funkcja zmniejsza rozmiar rastra o podaną liczbę komórek z każdej strony. Funkcja nie modyfikuje otrzymanego rastra, tylko zwraca nowy o zmniejszonym rozmiarze.
 
 5. **Kompresja rastra**
 
-    Funkcja zmniejsza rozdzielczość rastra przez wyznaczenie nowej wartości komórki jako średniej z sąsiednich pól. Funkcja otrzymuje parametr określający rozmiar okna do kompresji (np. 2 oznacza okno 2×2, 3 oznacza okno 3×3). W przypadku, gdy liczba kolumn lub wierszy nie jest podzielna przez zadany rozmiar okna, pozostałe komórki są pomijane (obcinane). Funkcja nie modyfikuje otrzymanego rastra, zwraca nowy o zmniejszonym rozmiarze.
+    Funkcja zmniejsza rozdzielczość rastra przez wyznaczenie nowej wartości komórki jako średniej z sąsiednich pól. Funkcja otrzymuje parametr określający rozmiar okna do kompresji (np. 2 oznacza okno 2&times;2, 3 oznacza okno 3&times;3). W przypadku, gdy liczba kolumn lub wierszy nie jest podzielna przez zadany rozmiar okna, pozostałe komórki są pomijane (obcinane). Funkcja nie modyfikuje otrzymanego rastra, tylko zwraca nowy o zmniejszonym rozmiarze.
 
 6. **Operacje z maską**
 
-    Funkcje obliczające minimum, maksimum, średnią i modę ale z dodatkowym parametrem &mdash; maską. Maska jest rastrem z wartościami logicznymi (lub liczbowymi interpretowanymi w sposób logiczny: 0  &mdash; `False`, w przeciwnym razie `True`). Funkcje uwzględniają wyłącznie komórki wskazane w masce (te, które mają wartość logiczną `True`). W przypadku maski &bdquo;pustej&rdquo; (same wartości `False`, co oznacza brak danych do obliczeń) funkcja zgłasza wyjątek `ValueError`.
+    Cztery funkcje obliczające minimum, maksimum, średnią i modę ale z dodatkowym parametrem &mdash; maską. Maska jest rastrem z wartościami logicznymi (lub liczbowymi interpretowanymi w sposób logiczny: `0`  oznacza `False`, `1` oznacza `True`). Funkcje uwzględniają wyłącznie komórki wskazane w masce (te, które mają wartość logiczną `True`). W przypadku maski &bdquo;pustej&rdquo; (same wartości `False`, co oznacza brak danych do obliczeń) funkcja zgłasza wyjątek `ValueError`.
 
 
 #### Metody klasy `Raster`
 
 Dopisz dodatkowe metody do klasy `Raster`:
-1. metoda `dane()` zwracająca kopię danych rastra &mdash; listę list,
-2. metoda obliczająca modę,
+1. metoda `dane(self)` zwracająca kopię danych rastra &mdash; listę list,
+2. metoda `moda(self)` obliczająca modę,
 3. metoda zmniejszająca raster,
 4. metoda kompresująca raster,
-5. metody do operacji z maską z dodatkowym parametrem &mdash; maską.
+5. cztery metody do operacji z maską z dodatkowym parametrem &mdash; maską.
 
 **Uwaga:** Metody w klasie mają nie modyfikować obiektu (pól `tablica`, `wysokosc` i `szerokosc`), na którym zostały wywołane. W razie potrzeby metoda powinna zwrócić nowy obiekt klasy `Raster`.
+
+**Do zastanowienia:** Pomyśl, czy nie dałoby się napisać jednej funkcji (i podobnie jednej metody) do obliczenia każdej ze statystyk zarówno w wersji z maską jak i bez niej. Tak, żeby np. wywołanie metody `raster.min()` obliczało najmniejszą wartość w rastrze a `raster.min(maska)` robiło to samo, ale z zastosowaniem maski.
 
 ### Zadanie 1.4. Program główny
 
 Napisz program używający napisanej klasy i modułu.
 
-1. Jeżeli program został uruchomiony z parametrem wiersza poleceń , potraktuj pierwszy argument jako ścieżkę do pliku tekstowego i z niego wczytaj raster.
+1. Jeżeli program został uruchomiony z argumentem wiersza poleceń, potraktuj ten argument jako ścieżkę do pliku tekstowego i z niego wczytaj raster.
 
     W przypadku błędu odczytu (wyjątki zgłoszone z modułu/klasy) program powinien wypisać sensowny komunikat i się zakończyć.
 
@@ -147,4 +149,17 @@ Napisz program używający napisanej klasy i modułu.
 
 4. Wyświetl w pętli menu tekstowe pozwalające użytkownikowi na wielokrotne wybieranie i wykonywanie przygotowanych operacji (wyświetlenie statystyk, wyświetlenie danych, zapisanie, itp.).
 
+
+### Zadanie 1.5. Obliczanie statystyk i stan obiektu
+
+Zaimplementuj alternatywne podejście do obliczeń statystycznych.
+
+1. Napisz funkcję (w module), która jednorazowo iteruje po danych (liście) i zwraca krotkę z czterema wartościami (minimum, maksimum, średnia, moda).
+2. Dodaj do klasy `Raster` nowe pole `statystyki` i ustaw w konstruktorze jego wartość na `None`.
+3. Dodaj w klasie metodę `oblicz_statystyki(self)`, która wywoła nową funkcję, ale nic nie zwróci &mdash; zamiast tego zapisze otrzymaną krotkę do pola `statystyki`.
+4. Zmień metody `min()`, `maks()`, `srednia()` i metodę obliczającą modę w taki sposób, aby nie wykonywały żadnych obliczeń. Zamiast tego mają teraz odczytywać odpowiednie wartości z zapisanej w polu `statystyki` krotki. Jeśli w momencie odpytania to pole wynosi `None`, metody powinny wyrzucić wyjątek `ValueError` z informacją (`"Statystyki nie zostały jeszcze policzone"`).
+
+**Uwaga:** Jeśli po użyciu `oblicz_statystyki()` zostaną zmienione wartości danych rastra, metody zwracające obliczone statystyki będą zwracać nieaktualne wyniki dopóki nie zostaną one uaktualnione kolejnym wywołaniem `oblicz_statystyki()`.
+
+**Do zastanowienia:** Czy podstawowe mechanizmy klas w Pythonie, czyli użycie zwykłych pól i metod, pozwalają na pozbycie się konieczności jawnego wywoływania metody `oblicz_statystyki()` i automatyczne przeliczenie statystyk przez metody `min()`, `maks()`, `srednia()` i `moda()` tylko, jeżeli od ostatniego ich obliczenia zmieniły się jakieś wartości w rastrze?
 
