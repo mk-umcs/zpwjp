@@ -92,14 +92,12 @@ Napisz funkcję `punkty_w_kole(kolo, sekwencja_punktow)`, która zwraca listę t
 
 W tym zadaniu przyjmujemy, że współrzędne `x`, `y` oznaczają współrzędne w układzie **EPSG:2180** (**w metrach**).
 
-Mamy plik tekstowy zawierający miasta w formacie `nazwa miasta;x;y`.
-
-Przykładowy plik:
+Mamy plik tekstowy zawierający miasta w formacie `nazwa miasta;x;y`, np..
 
 ```{literalinclude} zestaw-02/miasta_wspolrzedne_przyklad.txt
 ```
 
-**Wskazówka:** Przykład do testów ze wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
+- Przykład do testów ze wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
 
 Napisz program, który:
 1. wczytuje plik z miastami,
