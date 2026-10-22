@@ -94,12 +94,12 @@ W tym zadaniu przyjmujemy, że współrzędne `x`, `y` oznaczają współrzędne
 
 Mamy plik tekstowy zawierający miasta w formacie `nazwa miasta;x;y`.
 
-Przykładowy plik (`miasta_wspolrzedne.txt`):
+Przykładowy plik:
 
-```{literalinclude} zestaw-02/miasta_wspolrzedne.txt
+```{literalinclude} zestaw-02/miasta_wspolrzedne_przyklad.txt
 ```
 
-*Wskazówka:* Plik do testów ze wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
+**Wskazówka:** Przykład do testów ze wszystkimi miastami polskimi (stan na 2025 rok) znajdziesz w pliku [miasta_wspolrzedne_2025.txt](zestaw-02/miasta_wspolrzedne_2025.txt).
 
 Napisz program, który:
 1. wczytuje plik z miastami,
