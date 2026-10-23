@@ -22,7 +22,9 @@ project:
             - file: wyklad/01-klasy-obiekty/01-materialy.md
               title: Pliki do pobrania
         - title: Programowanie obiektowe — referencje, kopie
-          children: []
+          # children:
+          #   # - file: wyklad/02-referencje-kopie/02-referencje-kopie.ipynb
+          #   - file: wyklad/02-referencje-kopie/02-1-referencje-kopie-wyklad.md
 
     - title: Zadania
       children:
