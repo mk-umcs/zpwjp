@@ -6,7 +6,6 @@ Przykładowe odpowiedzi do ćwiczeń:
 
 ```python
 class Wspolrzedne:
-
     def __init__(self, dlugosc, szerokosc):
         self.dlugosc = dlugosc
         self.szerokosc = szerokosc
@@ -49,7 +48,6 @@ True
 
 ```python
 class Wspolrzedne:
-
     def __init__(self, dlugosc, szerokosc):
         self.dlugosc = dlugosc
         self.szerokosc = szerokosc
@@ -82,7 +80,6 @@ False
 
 ```python
 class Wspolrzedne:
-
     def __init__(self, dlugosc, szerokosc):
         self.dlugosc = dlugosc
         self.szerokosc = szerokosc
