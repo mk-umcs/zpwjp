@@ -30,8 +30,8 @@ project:
           title: Zestaw 1 — Zadania powtórzeniowe (listy, krotki, słowniki, wyjątki, pliki)
         - file: zadania/zestaw-02/klasy-obiekty.md
           title: "Zestaw 2 — Programowanie obiektowe: klasy i obiekty"
-        # - file: zadania/zestaw-03/moduly-raster.md
-        #   title: "Zestaw 3 — Moduły i programowanie obiektowe"
+        - file: zadania/zestaw-03/moduly-raster.md
+          title: "Zestaw 3 — Moduły i programowanie obiektowe"
   static_files:
     - zadania/zestaw-01/zestaw-01
     - materialy/notebooki
