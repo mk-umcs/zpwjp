@@ -113,7 +113,7 @@ Dla tych danych wywołanie `filtruj(towary, min_cena=Cena(zl=5), nazwa_zawiera="
 (trasy-ulubione)=
 ## 3. Ulubione trasy
 
-Wykorzystaj klasę `Punkt` z [zestawu 2](../zestaw-02/klasy-obiekty.md). Przyjmij, że współrzędne punktów są wyrażone w metrach, w jednym płaskim układzie współrzędnych.
+Wykorzystaj [klasę `Punkt` z zestawu 2](../zestaw-02/klasy-obiekty.md#klasa-punkt). Przyjmij, że współrzędne punktów są wyrażone w metrach, w jednym płaskim układzie współrzędnych.
 
 Napisz klasę `Trasa(nazwa, punkty)` reprezentującą trasę złożoną z kolejnych punktów.
 
@@ -136,6 +136,13 @@ Zaimplementuj metody:
 
 Zadbaj o niezależność obiektów: zmiana trasy źródłowej lub trasy należącej do jednego użytkownika nie może wpływać na trasy innych użytkowników. Nie używaj listy jako domyślnego argumentu konstruktora.
 
+Sprawdź:
+
+- niezależność listy i punktów po utworzeniu obiektu `Trasa`;
+- niezależność kopii otrzymanej z metody `punkty()`;
+- niezależność tras dwóch użytkowników, również po wykonaniu `skopiuj_trasy`;
+- zgłoszenie błędu dla trasy zawierającej tylko jeden punkt.
+
 Napisz funkcje odczytu i zapisu listy tras w formacie JSON. Przykładowa zawartość pliku:
 
 ```json
@@ -145,9 +152,9 @@ Napisz funkcje odczytu i zapisu listy tras w formacie JSON. Przykładowa zawarto
 ]
 ```
 
-Do pracy z JSON wykorzystaj moduł `json`, który udostępnia m.in. funkcje:
+Do pracy z JSON wykorzystaj moduł `json`, który udostępnia m\.in. funkcje:
 
-- `json.load(plik)` — odczytuje dane JSON z otwartego pliku i tworzy odpowiednie obiekty Pythona;
+- `json.load(plik)` — odczytuje dane JSON z otwartego pliku i tworzy odpowiednie obiekty Pythona, np. dla powyższego przykładowego pliku wynikiem byłaby lista słowników z kluczami `"nazwa"` i `"punkty"`;
 - `json.loads(tekst)` — odczytuje dane JSON z łańcucha znaków;
 - `json.dump(dane, plik)` — zapisuje dane Pythona w formacie JSON do otwartego pliku;
 - `json.dumps(dane)` — przekształca dane Pythona w łańcuch znaków zawierający JSON.
@@ -160,10 +167,3 @@ Napisz program, który:
 4. Tworzy przesuniętą kopię wybranej trasy i zapisuje ją w nowym pliku JSON, bez modyfikowania trasy źródłowej.
 
 Dla przykładowej trasy „Nad rzeką” długość powinna wynosić 700 m.
-
-Sprawdź również:
-
-- niezależność listy i punktów po utworzeniu obiektu `Trasa`;
-- niezależność kopii otrzymanej z metody `punkty()`;
-- niezależność tras dwóch użytkowników, również po wykonaniu `skopiuj_trasy`;
-- zgłoszenie błędu dla trasy zawierającej tylko jeden punkt.

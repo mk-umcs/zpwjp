@@ -62,6 +62,7 @@ Program powinien używać klasy `Miasto` oraz napisanych wcześniej funkcji `naj
 
 ## 3. Punkty i Koła
 
+(klasa-punkt)=
 **Klasa `Punkt`**
 
 Napisz klasę `Punkt`, która reprezentuje punkt w przestrzeni dwuwymiarowej z metodami umożliwiającymi zmianę położenia i obliczenie odległości między dwoma punktami.
