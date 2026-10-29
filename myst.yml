@@ -22,10 +22,9 @@ project:
             - file: wyklad/01-klasy-obiekty/01-materialy.md
               title: Pliki do pobrania
         - title: Programowanie obiektowe — referencje, kopie
-          # children:
+          children: []
           #   # - file: wyklad/02-referencje-kopie/02-referencje-kopie.ipynb
           #   - file: wyklad/02-referencje-kopie/02-1-referencje-kopie-wyklad.md
-
     - title: Zadania
       children:
         - file: zadania/zestaw-01/temperatury.md
@@ -34,6 +33,9 @@ project:
           title: "Zestaw 2 — Programowanie obiektowe: klasy i obiekty"
         - file: zadania/zestaw-03/moduly-raster.md
           title: "Zestaw 3 — Moduły i programowanie obiektowe"
+        - file: zadania/zestaw-04/klasy-referencje.md
+          title: "Zestaw 4 — Klasy i referencje"
+
   static_files:
     - zadania/zestaw-01/zestaw-01
     - materialy/notebooki
