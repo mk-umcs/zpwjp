@@ -1,0 +1,4 @@
+„Zażółć gęślą jaźń” to krótkie, poprawne gramatycznie zdanie
+zawierające wszystkie polskie litery ze znakami diakrytycznymi.
+Zdanie nie ma szczególnie sensownego znaczenia.
+Zdanie bywa używane do testowania kodowania i wyświetlania polskich znaków.

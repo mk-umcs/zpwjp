@@ -1,4 +1,4 @@
-# Programowanie obiektowe &mdash; Klasy i obiekty &mdash; podsumowanie
+# Programowanie obiektowe &mdash; klasy i obiekty &mdash; podsumowanie
 
 ## Terminologia (trzeba znać i rozumieć te terminy):
 - klasa
@@ -15,12 +15,12 @@
 - używanie obiektu (i składowych obiektu)
     - używanie pól
     - używanie metod
-- tworzenie i używanie metod specjalnych `__repr__` i `__str__`
-    - różnica między `__repr__` a `__str__`
+- tworzenie i używanie metod specjalnych [`__repr__`](https://docs.python.org/3/reference/datamodel.html#object.__repr__) i [`__str__`](https://docs.python.org/3/reference/datamodel.html#object.__str__)
+    - różnica między [`__repr__`](https://docs.python.org/3/reference/datamodel.html#object.__repr__) a [`__str__`](https://docs.python.org/3/reference/datamodel.html#object.__str__)
 
 ## Ćwiczenia sprawdzające
 
-Celem ćwiczeń jest samodzielne sprawdzenie zrozumienia materiału z wykładu i umiejętności użycia go. Jeżeli potrafisz je wykonać, powinieneś być przygotowany do wykorzystania wiedzy z wykładu na laboratorium.
+Celem ćwiczeń jest samodzielne sprawdzenie zrozumienia materiału z wykładu i umiejętności użycia go. Jeżeli potrafisz je wykonać, masz podstawy do wykorzystania wiedzy z wykładu na laboratorium.
 
 Jeżeli czegoś nie rozumiesz lub nie potrafisz wykonać, wróć do odpowiedniego fragmentu wykładu i spróbuj ponownie.
 
@@ -54,7 +54,7 @@ Uruchom interpreter Pythona w trybie interaktywnym.
 
 ### 3. Zmiana wartości pól
 
-- Zmień wartość pola `dlugosc` obiektu `punkt` na wybraną wartość.
+- Zmień wartość pola `dlugosc` obiektu `lublin` na wybraną wartość.
 
 - Sprawdź wartość tego pola.
 
@@ -134,4 +134,4 @@ Dopisz do klasy metodę `polkula_polnocna`, która:
     ```
     i wykonaj jeszcze raz to samo.
     
-    Symbol stopnia możesz uzskać np. za pomocą sekwencji `\u00b0`, np. `print("(22\u00b0, 51\u00b0)")` wyświetli napis `(22°, 51°)`.
+    Symbol stopnia możesz uzyskać np. za pomocą sekwencji `\u00b0`, np. `print("(22\u00b0, 51\u00b0)")` wyświetli napis `(22°, 51°)`.

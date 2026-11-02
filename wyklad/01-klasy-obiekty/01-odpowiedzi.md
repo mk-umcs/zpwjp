@@ -76,6 +76,21 @@ True
 False
 ```
 
+Przykładowa funkcja wyświetlająca informację, korzystająca ze zdefiniowanej wyżej klasy:
+
+```python
+def wyswietl_polkule(punkt):
+    if punkt.polkula_polnocna():
+        print("Punkt leży na półkuli północnej.")
+    else:
+        print("Punkt nie leży na półkuli północnej.")
+
+wyswietl_polkule(Wspolrzedne(22.57, 51.25))
+wyswietl_polkule(Wspolrzedne(10.0, 0.0))
+```
+
+Drugi komunikat obejmuje zarówno półkulę południową, jak i równik.
+
 7. Metody `__repr__` i `__str__`
 
 ```python
@@ -93,3 +108,5 @@ class Wspolrzedne:
     def __str__(self):
         return f"({self.dlugosc}\u00b0, {self.szerokosc}\u00b0)"
 ```
+
+Po ponownym zdefiniowaniu klasy utwórz nowy obiekt `lublin = Wspolrzedne(22.57, 51.25)`, aby wypróbować dodane metody. Istniejący obiekt nadal należy do poprzedniej wersji klasy.
