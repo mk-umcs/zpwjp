@@ -1,4 +1,4 @@
-# Klasy, współpraca obiektów i kopiełamane
+# Klasy, współpraca obiektów i kopie: łamane
 
 1. Napisz klasę `Lamana` reprezentujacą [linię łamaną](https://pl.wikipedia.org/wiki/Linia_%C5%82amana). Nowo utworzona łamana jest pusta (nie zawiera żadnych punktów). Do łamanej możemy dodawać kolejne punkty (metodą `dodaj_punkt`). Napisz metodę `dodaj_punkt`, metodę `dlugosc` zwracającą długość łamanej oraz metodę `__str__` zwracającą napisową reprezentację łamanej w formacie [WKT](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry). 
 

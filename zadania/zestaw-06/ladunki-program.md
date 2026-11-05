@@ -140,4 +140,3 @@ Po naprawie pozostają `wew` z jabłkami i nowe pudełko `nowe_1` z płytą. Por
 - Naprawa nie zmienia oryginału, nie gubi towarów i nie tworzy ich kopii.
 - Ponowne uruchomienie naprawy na poprawionym pliku niczego już nie zmienia.
 
-{download}`Pobierz zestawy z kodem i danymi </kod/zadania-uzupelniajace.zip>`

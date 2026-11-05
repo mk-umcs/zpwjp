@@ -4,10 +4,10 @@
 
 Ładunek ma ciężar, wartość, trwałość. Może być delikatny. Zakładamy zatem, że obiekty reprezentujące ładunki muszą mieć następujące metody:
 
-* `ciezar` --- ciężar ładunku (w kilogramach),
-* `wartosc` --- wartość ładunku (w groszach),
-* `trwalosc` --- trwałość ładunku (w dniach)
-* `delikatny` --- czy ładunek jest delikatny
+* `ciezar` &mdash; ciężar ładunku (w kilogramach),
+* `wartosc` &mdash; wartość ładunku (w groszach),
+* `trwalosc` &mdash; trwałość ładunku (w dniach)
+* `delikatny` &mdash; czy ładunek jest delikatny
 
 Napisz następujące klasy (różne ładunki) z powyższymi metodami:
 

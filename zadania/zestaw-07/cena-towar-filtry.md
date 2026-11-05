@@ -14,14 +14,14 @@ Napisz klasę `Cena` reprezentującą cenę w złotych i groszach.
 **Metody do zaimplementowania**:
 
 - odpowiednie metody konwertujące obiekt na napis (patrz przykłady użycia)
-- `dodajCene(self, inna_cena)` --- przyjmuje drugi obiekt klasy `Cena`, zwraca nowy obiekt będący sumą cen
-- `roznicaCen(self, inna_cena)` --- zwraca dodatnią różnicę między cenami (kolejność nie ma znaczenia)
-- `wiekszaOd(self, inna_cena)` --- zwraca `True` jeśli cena jest większa od podanej
-- `rowne(self, inna_cena)` --- zwraca `True` jeśli ceny są równe
-- `podnies(self, procent)` --- podnosi cenę o podany procent (liczba dodatnia), modyfikuje obiekt, zaokrągla do pełnych groszy
-- `obniz(self, procent)` --- obniża cenę o podany procent (liczba dodatnia), modyfikuje obiekt, zaokrągla do pełnych groszy
-- `podwyzka(self, procent)` --- zwraca nowy obiekt z podniesioną ceną o podany procent
-- `obnizka(self, procent)` --- zwraca nowy obiekt z obniżoną ceną o podany procent
+- `dodajCene(self, inna_cena)` &mdash; przyjmuje drugi obiekt klasy `Cena`, zwraca nowy obiekt będący sumą cen
+- `roznicaCen(self, inna_cena)` &mdash; zwraca dodatnią różnicę między cenami (kolejność nie ma znaczenia)
+- `wiekszaOd(self, inna_cena)` &mdash; zwraca `True` jeśli cena jest większa od podanej
+- `rowne(self, inna_cena)` &mdash; zwraca `True` jeśli ceny są równe
+- `podnies(self, procent)` &mdash; podnosi cenę o podany procent (liczba dodatnia), modyfikuje obiekt, zaokrągla do pełnych groszy
+- `obniz(self, procent)` &mdash; obniża cenę o podany procent (liczba dodatnia), modyfikuje obiekt, zaokrągla do pełnych groszy
+- `podwyzka(self, procent)` &mdash; zwraca nowy obiekt z podniesioną ceną o podany procent
+- `obnizka(self, procent)` &mdash; zwraca nowy obiekt z obniżoną ceną o podany procent
 
 *Wskazówka:* metody `podwyzka` i `obnizka` mogą wykorzystywać użycie metod `podnies` i `obniz` na kopii obiektu, metody mające parametr `procent` powinny zgłaszać wyjątek `ValueError` jeżeli procent nie jest dodatni.
 
@@ -62,13 +62,17 @@ Traceback (most recent call last):
 TypeError: Cena.__init__() takes 1 positional argument but 3 were given
 ```
 
+### Operatory
+
+Zastanów się nad implementacją wybranych operatorów dla klasy `Cena`.
+
 ## Funkcje operujące na cenach
 
 Napisz następujące funkcje:
 
-- `sumaCen` --- przyjmuje dowolną liczbę obiektów `Cena`, zwraca ich sumę,
-- `najwyzszaCena` --- przyjmuje jeden lub więcej obiekt `Cena`, zwraca najwyższą cenę z podanych,
-- `najnizszaCena` --- przyjmuje jeden lub więcej obiekt `Cena`, zwraca najniższą cenę z podanych.
+- `sumaCen` &mdash; przyjmuje dowolną liczbę obiektów `Cena`, zwraca ich sumę,
+- `najwyzszaCena` &mdash; przyjmuje jeden lub więcej obiekt `Cena`, zwraca najwyższą cenę z podanych,
+- `najnizszaCena` &mdash; przyjmuje jeden lub więcej obiekt `Cena`, zwraca najniższą cenę z podanych.
 
 
 ### Przykłady użycia:
@@ -101,10 +105,10 @@ Napisz klasę `Towar` reprezentującą towar z nazwą i ceną (pola `nazwa` i `c
 
 **Metody do zaimplementowania**:
 
-- `__str__(self)` --- zwraca napis w postaci: `"jabłka: 5 zł i 80 gr"`
-- `__repr__(self)` --- zwraca napis w postaci: `"Towar('gruszki', Cena(zl=4, gr=50))"`
-- `podniesCene(self, procent)` --- podnosi cenę towaru o podany procent
-- `obnizCene(self, procent)` --- obniża cenę towaru o podany procent
+- `__str__(self)` &mdash; zwraca napis w postaci: `"jabłka: 5 zł i 80 gr"`
+- `__repr__(self)` &mdash; zwraca napis w postaci: `"Towar('gruszki', Cena(zl=4, gr=50))"`
+- `podniesCene(self, procent)` &mdash; podnosi cenę towaru o podany procent
+- `obnizCene(self, procent)` &mdash; obniża cenę towaru o podany procent
 
 *Wskazówka*: wykorzystaj metody z klasy `Cena`.
 
@@ -137,9 +141,9 @@ Czy obiekt `Towar` powinien tworzyć kopię ceny otrzymanej jako argument? Jeże
 
 Napisz funkcję `filtruj` która przyjmuje sekwencję towarów i zwraca listę pasujących towarów. Funkcja musi mieć możliwość zastosowania następujących filtrów (wszystkie jako argumenty nazwane):
 
-- `min_cena` --- minimalna cena towaru (obiekt klasy Cena), towary z ceną niższą są odrzucane,
-- `max_cena` --- maksymalna cena towaru (obiekt klasy Cena), towary z ceną wyższą są odrzucane,  
-- `nazwa_zawiera` --- napis, który musi być zawarty w nazwie towaru (wielkość liter ma znaczenie).
+- `min_cena` &mdash; minimalna cena towaru (obiekt klasy Cena), towary z ceną niższą są odrzucane,
+- `max_cena` &mdash; maksymalna cena towaru (obiekt klasy Cena), towary z ceną wyższą są odrzucane,  
+- `nazwa_zawiera` &mdash; napis, który musi być zawarty w nazwie towaru (wielkość liter ma znaczenie).
 
 Nie wszystkie filtry muszą być użyte w danym wywołaniu. Jeśli filtr nie jest podany, nie wpływa na wynik.
 
