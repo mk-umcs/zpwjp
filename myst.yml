@@ -259,298 +259,300 @@ project:
         - file: zadania/zestaw-04/klasy-referencje.md
           title: "Zestaw 4 — Klasy i referencje"
 
-        - file: zadania/zestaw-05/enkapsulacja.md
+        - title: Zestaw 5 — Enkapsulacja i właściwości
           children:
+          - file: zadania/zestaw-05/punkt.md
           - file: zadania/zestaw-05/temperatura.md
-          title: Zestaw 5 — Enkapsulacja i właściwości
-        - file: zadania/zestaw-06/polimorfizm.md
+        - title: Zestaw 6 — Polimorfizm i dziedziczenie
           children:
           - file: zadania/zestaw-06/ladunki-pracownicy.md
           - file: zadania/zestaw-06/ladunki-program.md
             title: Ładunki — program do przygotowania przesyłki
-          title: Zestaw 6 — Polimorfizm i dziedziczenie
-        - file: zadania/zestaw-07/index.md
-          title: Zestaw 7 — System plików
+        - title: Zestaw 7 — Różne zadania
           children:
-          - file: zadania/zestaw-07/system-plikow.md
-            title: System plików — katalogi, wyszukiwanie i kopiowanie
-          - file: zadania/zestaw-07/katalogi-formaty.md
-            title: System plików — dalsze zadania i formaty danych
-          - file: zadania/zestaw-07/shapefile.md
-            title: Zestaw plików Shapefile — wyszukiwanie i kopiowanie
-          - file: zadania/zestaw-07/csv-miasta.md
-            title: CSV, GeoJSON i katalogi załączników
-          - file: zadania/zestaw-07/tiff.md
-            title: Sygnatury TIFF i poprawianie rozszerzeń
-          - file: zadania/zestaw-07/przekrojowe.md
-            title: System plików — zadania przekrojowe
-          - file: zadania/zestaw-07/przekrojowe-wariant.md
-            title: System plików — raportowanie i wolne nazwy
-          - file: zadania/zestaw-07/rozszerzenia.md
-            title: System plików — warianty z dodatkowymi wymaganiami
-          - file: zadania/zestaw-07/dane-binarne.md
-            title: Dane binarne — dalsze ćwiczenia z plikami
-          - file: zadania/zestaw-07/cwiczenia-dodatkowe.md
-            title: Dodatkowe krótkie ćwiczenia
-            children:
-            - file: zadania/zestaw-07/cwiczenia-odpowiedzi.md
-              title: Odpowiedzi
-        - file: zadania/zestaw-08/08-testowanie.md
-          title: Zestaw 8 — Testowanie i debugowanie
-          children:
-          - file: zadania/zestaw-08/08-pytest-pelny-zestaw.md
-            title: Testowanie — daty, TDD, prostokąty i zegar
-          - file: zadania/zestaw-08/08-zegar-unittest.md
-            title: Zegar — testy, naprawa i zmiana reprezentacji
-          - file: zadania/zestaw-08/08-tdd-debugger.md
-            title: TDD, pomiary czasu i praca z debuggerem
-          - file: zadania/zestaw-08/08-listy-testy-czas.md
-            title: Listy — testy i porównanie czasu implementacji
-          - file: zadania/zestaw-08/08-testy-okres.md
-            title: Okres — testy jednostkowe
-          - file: zadania/zestaw-08/08-testy-zegar-amerykanski.md
-            title: Zegar amerykański — testy unittest
-          - file: zadania/zestaw-08/08-konto-uczniowie.md
-            title: Testy jako specyfikacja konta i testowanie klasy uczniów
-          - file: zadania/zestaw-08/08-testy-cwiczenia.md
-            title: Testowanie — dodatkowe krótkie ćwiczenia
-          - file: zadania/zestaw-08/08-testy-cwiczenia-odpowiedzi.md
-            title: Testowanie — dodatkowe krótkie ćwiczenia — odpowiedzi
-          - file: zadania/zestaw-08/08-testy-refaktoryzacja-wariant.md
-            title: Testowanie i refaktoryzacja — dodatkowe warianty
-          - file: zadania/zestaw-08/08-egzamin-listy.md
-            title: Testy funkcji wspólnych elementów — wariant egzaminacyjny
-          - file: zadania/zestaw-08/08-egzamin-srednia.md
-            title: Testy funkcji średniej — wariant egzaminacyjny
-          - file: zadania/zestaw-08/08-egzamin-wspolrzedna.md
-            title: Testy współrzędnej geograficznej — wariant egzaminacyjny
-        - file: zadania/zestaw-09/09-pyqt-zadania.md
-          title: Zestaw 9 — PyQt
-          children:
-          - file: zadania/zestaw-09/09-cwiczenia-podstawy.md
-            title: PyQt — dodatkowe ćwiczenia podstawowe
-          - file: zadania/zestaw-09/09-cwiczenia-podstawy-odpowiedzi.md
-            title: PyQt — dodatkowe ćwiczenia podstawowe — odpowiedzi
-          - file: zadania/zestaw-09/09-cwiczenia-liczniki.md
-            title: PyQt — ćwiczenia z modelami i widżetami
-          - file: zadania/zestaw-09/09-cwiczenia-liczniki-odpowiedzi.md
-            title: PyQt — ćwiczenia z modelami i widżetami — odpowiedzi
-          - file: zadania/zestaw-09/09-pyqt-podstawowe.md
-            title: PyQt — podstawowe programy i własny widżet
-          - file: zadania/zestaw-09/09-pyqt-dane-osobowe.md
-            title: PyQt — edycja danych osobowych wielu osób
-          - file: zadania/zestaw-09/09-pyqt-miasta.md
-            title: PyQt — przeglądarka miast i eksport danych
-          - file: zadania/zestaw-09/09-pyqt-telefoniczna.md
-            title: PyQt — książka telefoniczna
-          - file: zadania/zestaw-09/09-pyqt-egzamin.md
-            title: PyQt — tekst, wzrost i zapis do pliku
-          - file: zadania/zestaw-09/09-pyqt-systemy.md
-            title: PyQt — konwersja trzech systemów liczbowych
-          - file: zadania/zestaw-09/09-pyqt-warianty.md
-            title: PyQt — dodatkowe warianty programów
-          - file: zadania/zestaw-09/09-pyqt-systemy-2-16.md
-            title: PyQt — interpretacja liczb w systemach od 2 do 16
-          - file: zadania/zestaw-09/09-pyqt-godziny-minuty.md
-            title: PyQt — przesuwanie godzin i minut
-          - file: zadania/zestaw-09/09-pyqt-materialy.md
-            title: PyQt — kod pomocniczy do zadań
-        - file: zadania/uzupelniajace/index.md
-          title: Dodatkowe zestawy tematyczne
-          children:
-          - file: zadania/uzupelniajace/powtorka/index.md
-            title: Powtórzenie
-            children:
-            - file: zadania/uzupelniajace/powtorka/struktury-wyjatki-pliki.md
-              title: Struktury danych, wyjątki i pliki tekstowe
-            - file: zadania/uzupelniajace/powtorka/unicode-kodowania.md
-              title: Napisy Unicode, bajty i kodowania plików
-            - file: zadania/uzupelniajace/powtorka/obsluga-wyjatkow.md
-              title: Obsługa wyjątków i ponawianie pytań
-            - file: zadania/uzupelniajace/powtorka/temperatury-walidacja.md
-              title: Temperatury — pełne wczytywanie i walidacja danych
-            - file: zadania/uzupelniajace/powtorka/temperatury-odpowiedzi.md
-              title: Temperatury — przykładowe odpowiedzi do wariantu z walidacją
-          - file: zadania/uzupelniajace/moduly/index.md
-            title: Moduły i argumenty programu
-            children:
-            - file: zadania/uzupelniajace/moduly/cwiczenia.md
-              title: Własne moduły, importy i argumenty programu
-            - file: zadania/uzupelniajace/moduly/odpowiedzi.md
-              title: Własne moduły, importy i argumenty programu — odpowiedzi
-          - file: zadania/uzupelniajace/parametry-argumenty/index.md
-            title: Parametry i argumenty funkcji
-            children:
-            - file: zadania/uzupelniajace/parametry-argumenty/adresy-ciagi-pesel.md
-              title: Adresy, ciągi i dane z numeru PESEL
-            - file: zadania/uzupelniajace/parametry-argumenty/laczenie-napisow.md
-              title: Łączenie napisów z wybranymi separatorami
-            - file: zadania/uzupelniajace/parametry-argumenty/prostokat-ograniczajacy.md
-              title: Prostokąt ograniczający i filtrowanie miast
-            - file: zadania/uzupelniajace/parametry-argumenty/wizytowka.md
-              title: Wizytówka z dowolną liczbą imion
-            - file: zadania/uzupelniajace/parametry-argumenty/adres-i-coalesce.md
-              title: Adres i wybór pierwszej dostępnej wartości
-            - file: zadania/uzupelniajace/parametry-argumenty/funkcje-i-srednia-potegowa.md
-              title: Funkcje o różnych interfejsach i średnia potęgowa
-            - file: zadania/uzupelniajace/parametry-argumenty/podmiany-znakow.md
-              title: Podmiana znaków przez słownik i argumenty nazwane
-            - file: zadania/uzupelniajace/parametry-argumenty/interfejsy-funkcji.md
-              title: Funkcje — dodatkowe warianty interfejsów
-            - file: zadania/uzupelniajace/parametry-argumenty/wizytowka-lista-imion.md
-              title: Wizytówka — imiona jako napis lub lista
-            - file: zadania/uzupelniajace/parametry-argumenty/wizytowka-nazwane.md
-              title: Wizytówka — wyłącznie argumenty nazwane
-            - file: zadania/uzupelniajace/parametry-argumenty/srednia-ocen.md
-              title: Średnia ocen — parametry i sposób przekazywania argumentów
-            - file: zadania/uzupelniajace/parametry-argumenty/cwiczenia-z-przekazywania.md
-              title: Parametry, argumenty i przekazywanie funkcji dalej
-            - file: zadania/uzupelniajace/parametry-argumenty/odpowiedzi-przekazywanie.md
-              title: Parametry, argumenty i przekazywanie funkcji dalej — odpowiedzi
-          - file: zadania/uzupelniajace/obiektowosc/index.md
-            children:
-            - file: zadania/uzupelniajace/obiektowosc/podstawy.md
-              children:
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zpwjp-21-22/zestaw.md
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/io-20-21/zestaw-punkt-kolo-odcinek.md
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/io-20-21/Trojkat-GraniastoslupTrojkatny.md
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zad-dzien-roku-szkolnego.md
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zad-licznik-slow.md
-              - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zpwjp-21-22/zestaw-propozycje.md
-              - file: zadania/uzupelniajace/obiektowosc/geometria/punkt-kolo-miasta.md
-              - file: zadania/uzupelniajace/obiektowosc/ceny/cena-towar-filtry.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-02/klasy-obiekty.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-03/moduly-raster.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-04/obiekty-kopie.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/02-referencje-kopie/02-podsumowanie.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/domyslna-lista.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-daty-trasy.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-kolejne-etapy.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-punkty.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-eksperymenty.md
-            - file: zadania/uzupelniajace/obiektowosc/wlasciwosci.md
-              children:
-              - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/io-20-21-punkt.md
-              - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/zad-dane-osobowe.md
-              - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/zpwjp-21-22/zestaw.md
-              - file: zadania/uzupelniajace/obiektowosc/ceny/cena-niemutowalna-historia.md
-              - file: zadania/uzupelniajace/obiektowosc/dane/osoba-konto.md
-              - file: zadania/uzupelniajace/obiektowosc/dane/uczen-ocena-koncowa.md
-              - file: zadania/uzupelniajace/obiektowosc/dane/adres.md
-              - file: zadania/uzupelniajace/obiektowosc/czas/zegar-minutowy.md
-              - file: zadania/uzupelniajace/obiektowosc/egzaminy/licznik.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-05/enkapsulacja-zadania-dodatkowe.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/06-obiektowe-enkapsulacja/06-podsumowanie.md
-            - file: zadania/uzupelniajace/obiektowosc/dziedziczenie.md
-              children:
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zestaw-zpwjp-21-22.md
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-wzrost.md
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-zpwjp-21-22-wagon.md
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-zpwjp-21-22-wagon-propozycja.md
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zestaw-zpwjp-21-22-propozycje.md
-              - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/pracownicy-wiek-plec.md
-              - file: zadania/uzupelniajace/obiektowosc/egzaminy/dystans.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-06/polimorfizm-zadania-dodatkowe.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/07-obiektowe-polimorfizm/07-podsumowanie.md
-            - file: zadania/uzupelniajace/obiektowosc/dalsze-etapy.md
-              children:
-              - file: zadania/uzupelniajace/obiektowosc/projekty/prezenty-pojazdy.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-21-22-prace-domowe.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-io-20-21-prace-domowe.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-20-21-egzamin-cz-1.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-21-22-egzamin.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-pd-punkt.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-trojkat.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-cena-grosze.md
-              - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zegar-24.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/io-20-21/okres.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/okres-z-dniami.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/zestaw.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-czas.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-ulamek.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-ascii-grid.md
-              - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/zad-raster.md
-              - file: zadania/uzupelniajace/obiektowosc/ceny/cena-operatory-podzial.md
-              - file: zadania/uzupelniajace/obiektowosc/egzaminy/licznik-slow-dodawanie.md
-              - file: zadania/uzupelniajace/obiektowosc/egzaminy/kat.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-07/metody-specjalne.md
-              - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-08/skladowe-klasy.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/08-obiektowe-metody-specjalne/08-podsumowanie.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/09-obiektowe-statyczne/09-podsumowanie.md
-              - file: zadania/uzupelniajace/obiektowosc/geometria/miasta-widoczne-z-trasy.md
-            - file: zadania/uzupelniajace/obiektowosc/zasoby.md
-            - title: Odpowiedzi do dodatkowych ćwiczeń
-              children:
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/02-referencje-kopie/02-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/06-obiektowe-enkapsulacja/06-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/07-obiektowe-polimorfizm/07-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/08-obiektowe-metody-specjalne/08-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/09-obiektowe-statyczne/09-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/domyslna-lista-odpowiedz.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-daty-trasy-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-punkty-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-eksperymenty-odpowiedzi.md
-              - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-kolejne-etapy-odpowiedzi.md
-            - file: zadania/uzupelniajace/obiektowosc/warianty/index.md
-              title: Zasady wariantów
-            title: Programowanie obiektowe
-          - file: zadania/uzupelniajace/projekty/index.md
-            title: Projekty
-            children:
-            - file: zadania/uzupelniajace/projekty/01-daty-zajec/projekt.md
-              title: Daty cotygodniowych zajęć
-            - file: zadania/uzupelniajace/projekty/02-wspolrzedne-geograficzne/projekt.md
-              title: Miasta w prostokątnym obszarze
-            - file: zadania/uzupelniajace/projekty/03-zawody/projekt.md
-              title: Podium zawodów sportowych
-            - file: zadania/uzupelniajace/projekty/04-oceny/projekt.md
-              title: Oceny końcowe uczniów
-              children:
-              - file: zadania/uzupelniajace/projekty/04-oceny/etapy.md
-                title: Wersja uproszczona — kolejne etapy
-            - file: zadania/uzupelniajace/projekty/05-ulamki/projekt.md
-              title: Działania na ułamkach
-            - file: zadania/uzupelniajace/projekty/06-zamowienia/projekt.md
-              title: Wartość zamówienia
-            - file: zadania/uzupelniajace/projekty/07-dzialki/projekt.md
-              title: Pole i cena działek
-              children:
-              - file: zadania/uzupelniajace/projekty/07-dzialki/etapy.md
-                title: Wersja uproszczona — kolejne etapy
-            - file: zadania/uzupelniajace/projekty/08-bilety/projekt.md
-              title: Bilety do muzeum
-              children:
-              - file: zadania/uzupelniajace/projekty/08-bilety/etapy.md
-                title: Wersja uproszczona — kolejne etapy
-            - file: zadania/uzupelniajace/projekty/09-filtrowanie-ofert/projekt.md
-              title: Filtrowanie ofert
-            - file: zadania/uzupelniajace/projekty/miasta-granice.md
-              title: Miasta między zadanymi granicami
-            - file: zadania/uzupelniajace/projekty/grupowanie-urodzin.md
-              title: Grupowanie osób według dat urodzenia
-            - file: zadania/uzupelniajace/projekty/modele-obiektowe.md
-              title: Projekty z modelami obiektowymi
-            - file: zadania/uzupelniajace/projekty/zasady-wariantow.md
-              title: Zasady wariantów z modelami i rozszerzoną walidacją
+          - file: zadania/zestaw-07/cena-towar-filtry.md
+          - file: zadania/zestaw-07/zestaw.md
+        #   title: Zestaw 7 — System plików
+        #   children:
+        #   - file: zadania/zestaw-07/system-plikow.md
+        #     title: System plików — katalogi, wyszukiwanie i kopiowanie
+        #   - file: zadania/zestaw-07/katalogi-formaty.md
+        #     title: System plików — dalsze zadania i formaty danych
+        #   - file: zadania/zestaw-07/shapefile.md
+        #     title: Zestaw plików Shapefile — wyszukiwanie i kopiowanie
+        #   - file: zadania/zestaw-07/csv-miasta.md
+        #     title: CSV, GeoJSON i katalogi załączników
+        #   - file: zadania/zestaw-07/tiff.md
+        #     title: Sygnatury TIFF i poprawianie rozszerzeń
+        #   - file: zadania/zestaw-07/przekrojowe.md
+        #     title: System plików — zadania przekrojowe
+        #   - file: zadania/zestaw-07/przekrojowe-wariant.md
+        #     title: System plików — raportowanie i wolne nazwy
+        #   - file: zadania/zestaw-07/rozszerzenia.md
+        #     title: System plików — warianty z dodatkowymi wymaganiami
+        #   - file: zadania/zestaw-07/dane-binarne.md
+        #     title: Dane binarne — dalsze ćwiczenia z plikami
+        #   - file: zadania/zestaw-07/cwiczenia-dodatkowe.md
+        #     title: Dodatkowe krótkie ćwiczenia
+        #     children:
+        #     - file: zadania/zestaw-07/cwiczenia-odpowiedzi.md
+        #       title: Odpowiedzi
+        # - file: zadania/zestaw-08/08-testowanie.md
+        #   title: Zestaw 8 — Testowanie i debugowanie
+        #   children:
+        #   - file: zadania/zestaw-08/08-pytest-pelny-zestaw.md
+        #     title: Testowanie — daty, TDD, prostokąty i zegar
+        #   - file: zadania/zestaw-08/08-zegar-unittest.md
+        #     title: Zegar — testy, naprawa i zmiana reprezentacji
+        #   - file: zadania/zestaw-08/08-tdd-debugger.md
+        #     title: TDD, pomiary czasu i praca z debuggerem
+        #   - file: zadania/zestaw-08/08-listy-testy-czas.md
+        #     title: Listy — testy i porównanie czasu implementacji
+        #   - file: zadania/zestaw-08/08-testy-okres.md
+        #     title: Okres — testy jednostkowe
+        #   - file: zadania/zestaw-08/08-testy-zegar-amerykanski.md
+        #     title: Zegar amerykański — testy unittest
+        #   - file: zadania/zestaw-08/08-konto-uczniowie.md
+        #     title: Testy jako specyfikacja konta i testowanie klasy uczniów
+        #   - file: zadania/zestaw-08/08-testy-cwiczenia.md
+        #     title: Testowanie — dodatkowe krótkie ćwiczenia
+        #   - file: zadania/zestaw-08/08-testy-cwiczenia-odpowiedzi.md
+        #     title: Testowanie — dodatkowe krótkie ćwiczenia — odpowiedzi
+        #   - file: zadania/zestaw-08/08-testy-refaktoryzacja-wariant.md
+        #     title: Testowanie i refaktoryzacja — dodatkowe warianty
+        #   - file: zadania/zestaw-08/08-egzamin-listy.md
+        #     title: Testy funkcji wspólnych elementów — wariant egzaminacyjny
+        #   - file: zadania/zestaw-08/08-egzamin-srednia.md
+        #     title: Testy funkcji średniej — wariant egzaminacyjny
+        #   - file: zadania/zestaw-08/08-egzamin-wspolrzedna.md
+        #     title: Testy współrzędnej geograficznej — wariant egzaminacyjny
+        # - file: zadania/zestaw-09/09-pyqt-zadania.md
+        #   title: Zestaw 9 — PyQt
+        #   children:
+        #   - file: zadania/zestaw-09/09-cwiczenia-podstawy.md
+        #     title: PyQt — dodatkowe ćwiczenia podstawowe
+        #   - file: zadania/zestaw-09/09-cwiczenia-podstawy-odpowiedzi.md
+        #     title: PyQt — dodatkowe ćwiczenia podstawowe — odpowiedzi
+        #   - file: zadania/zestaw-09/09-cwiczenia-liczniki.md
+        #     title: PyQt — ćwiczenia z modelami i widżetami
+        #   - file: zadania/zestaw-09/09-cwiczenia-liczniki-odpowiedzi.md
+        #     title: PyQt — ćwiczenia z modelami i widżetami — odpowiedzi
+        #   - file: zadania/zestaw-09/09-pyqt-podstawowe.md
+        #     title: PyQt — podstawowe programy i własny widżet
+        #   - file: zadania/zestaw-09/09-pyqt-dane-osobowe.md
+        #     title: PyQt — edycja danych osobowych wielu osób
+        #   - file: zadania/zestaw-09/09-pyqt-miasta.md
+        #     title: PyQt — przeglądarka miast i eksport danych
+        #   - file: zadania/zestaw-09/09-pyqt-telefoniczna.md
+        #     title: PyQt — książka telefoniczna
+        #   - file: zadania/zestaw-09/09-pyqt-egzamin.md
+        #     title: PyQt — tekst, wzrost i zapis do pliku
+        #   - file: zadania/zestaw-09/09-pyqt-systemy.md
+        #     title: PyQt — konwersja trzech systemów liczbowych
+        #   - file: zadania/zestaw-09/09-pyqt-warianty.md
+        #     title: PyQt — dodatkowe warianty programów
+        #   - file: zadania/zestaw-09/09-pyqt-systemy-2-16.md
+        #     title: PyQt — interpretacja liczb w systemach od 2 do 16
+        #   - file: zadania/zestaw-09/09-pyqt-godziny-minuty.md
+        #     title: PyQt — przesuwanie godzin i minut
+        #   - file: zadania/zestaw-09/09-pyqt-materialy.md
+        #     title: PyQt — kod pomocniczy do zadań
+        # - file: zadania/uzupelniajace/index.md
+        #   title: Dodatkowe zestawy tematyczne
+        #   children:
+        #   - file: zadania/uzupelniajace/powtorka/index.md
+        #     title: Powtórzenie
+        #     children:
+        #     - file: zadania/uzupelniajace/powtorka/struktury-wyjatki-pliki.md
+        #       title: Struktury danych, wyjątki i pliki tekstowe
+        #     - file: zadania/uzupelniajace/powtorka/unicode-kodowania.md
+        #       title: Napisy Unicode, bajty i kodowania plików
+        #     - file: zadania/uzupelniajace/powtorka/obsluga-wyjatkow.md
+        #       title: Obsługa wyjątków i ponawianie pytań
+        #     - file: zadania/uzupelniajace/powtorka/temperatury-walidacja.md
+        #       title: Temperatury — pełne wczytywanie i walidacja danych
+        #     - file: zadania/uzupelniajace/powtorka/temperatury-odpowiedzi.md
+        #       title: Temperatury — przykładowe odpowiedzi do wariantu z walidacją
+        #   - file: zadania/uzupelniajace/moduly/index.md
+        #     title: Moduły i argumenty programu
+        #     children:
+        #     - file: zadania/uzupelniajace/moduly/cwiczenia.md
+        #       title: Własne moduły, importy i argumenty programu
+        #     - file: zadania/uzupelniajace/moduly/odpowiedzi.md
+        #       title: Własne moduły, importy i argumenty programu — odpowiedzi
+        #   - file: zadania/uzupelniajace/parametry-argumenty/index.md
+        #     title: Parametry i argumenty funkcji
+        #     children:
+        #     - file: zadania/uzupelniajace/parametry-argumenty/adresy-ciagi-pesel.md
+        #       title: Adresy, ciągi i dane z numeru PESEL
+        #     - file: zadania/uzupelniajace/parametry-argumenty/laczenie-napisow.md
+        #       title: Łączenie napisów z wybranymi separatorami
+        #     - file: zadania/uzupelniajace/parametry-argumenty/prostokat-ograniczajacy.md
+        #       title: Prostokąt ograniczający i filtrowanie miast
+        #     - file: zadania/uzupelniajace/parametry-argumenty/wizytowka.md
+        #       title: Wizytówka z dowolną liczbą imion
+        #     - file: zadania/uzupelniajace/parametry-argumenty/adres-i-coalesce.md
+        #       title: Adres i wybór pierwszej dostępnej wartości
+        #     - file: zadania/uzupelniajace/parametry-argumenty/funkcje-i-srednia-potegowa.md
+        #       title: Funkcje o różnych interfejsach i średnia potęgowa
+        #     - file: zadania/uzupelniajace/parametry-argumenty/podmiany-znakow.md
+        #       title: Podmiana znaków przez słownik i argumenty nazwane
+        #     - file: zadania/uzupelniajace/parametry-argumenty/interfejsy-funkcji.md
+        #       title: Funkcje — dodatkowe warianty interfejsów
+        #     - file: zadania/uzupelniajace/parametry-argumenty/wizytowka-lista-imion.md
+        #       title: Wizytówka — imiona jako napis lub lista
+        #     - file: zadania/uzupelniajace/parametry-argumenty/wizytowka-nazwane.md
+        #       title: Wizytówka — wyłącznie argumenty nazwane
+        #     - file: zadania/uzupelniajace/parametry-argumenty/srednia-ocen.md
+        #       title: Średnia ocen — parametry i sposób przekazywania argumentów
+        #     - file: zadania/uzupelniajace/parametry-argumenty/cwiczenia-z-przekazywania.md
+        #       title: Parametry, argumenty i przekazywanie funkcji dalej
+        #     - file: zadania/uzupelniajace/parametry-argumenty/odpowiedzi-przekazywanie.md
+        #       title: Parametry, argumenty i przekazywanie funkcji dalej — odpowiedzi
+        #   - file: zadania/uzupelniajace/obiektowosc/index.md
+        #     children:
+        #     - file: zadania/uzupelniajace/obiektowosc/podstawy.md
+        #       children:
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zpwjp-21-22/zestaw.md
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/io-20-21/zestaw-punkt-kolo-odcinek.md
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/io-20-21/Trojkat-GraniastoslupTrojkatny.md
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zad-dzien-roku-szkolnego.md
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zad-licznik-slow.md
+        #       - file: zadania/uzupelniajace/obiektowosc/klasy/zadania/zpwjp-21-22/zestaw-propozycje.md
+        #       - file: zadania/uzupelniajace/obiektowosc/geometria/punkt-kolo-miasta.md
+        #       - file: zadania/uzupelniajace/obiektowosc/ceny/cena-towar-filtry.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-02/klasy-obiekty.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-03/moduly-raster.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-04/obiekty-kopie.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/02-referencje-kopie/02-podsumowanie.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/domyslna-lista.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-daty-trasy.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-kolejne-etapy.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-punkty.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-eksperymenty.md
+        #     - file: zadania/uzupelniajace/obiektowosc/wlasciwosci.md
+        #       children:
+        #       - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/io-20-21-punkt.md
+        #       - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/zad-dane-osobowe.md
+        #       - file: zadania/uzupelniajace/obiektowosc/enkapsulacja/zadania/zpwjp-21-22/zestaw.md
+        #       - file: zadania/uzupelniajace/obiektowosc/ceny/cena-niemutowalna-historia.md
+        #       - file: zadania/uzupelniajace/obiektowosc/dane/osoba-konto.md
+        #       - file: zadania/uzupelniajace/obiektowosc/dane/uczen-ocena-koncowa.md
+        #       - file: zadania/uzupelniajace/obiektowosc/dane/adres.md
+        #       - file: zadania/uzupelniajace/obiektowosc/czas/zegar-minutowy.md
+        #       - file: zadania/uzupelniajace/obiektowosc/egzaminy/licznik.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-05/enkapsulacja-zadania-dodatkowe.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/06-obiektowe-enkapsulacja/06-podsumowanie.md
+        #     - file: zadania/uzupelniajace/obiektowosc/dziedziczenie.md
+        #       children:
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zestaw-zpwjp-21-22.md
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-wzrost.md
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-zpwjp-21-22-wagon.md
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zad-zpwjp-21-22-wagon-propozycja.md
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/zadania/zestaw-zpwjp-21-22-propozycje.md
+        #       - file: zadania/uzupelniajace/obiektowosc/polimorfizm-dziedziczenie/pracownicy-wiek-plec.md
+        #       - file: zadania/uzupelniajace/obiektowosc/egzaminy/dystans.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-06/polimorfizm-zadania-dodatkowe.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/07-obiektowe-polimorfizm/07-podsumowanie.md
+        #     - file: zadania/uzupelniajace/obiektowosc/dalsze-etapy.md
+        #       children:
+        #       - file: zadania/uzupelniajace/obiektowosc/projekty/prezenty-pojazdy.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-21-22-prace-domowe.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-io-20-21-prace-domowe.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-20-21-egzamin-cz-1.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zestaw-zpwjp-21-22-egzamin.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-pd-punkt.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-trojkat.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zpwjp-21-22-cena-grosze.md
+        #       - file: zadania/uzupelniajace/obiektowosc/calosc/zadania/zad-zegar-24.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/io-20-21/okres.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/okres-z-dniami.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/zestaw.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-czas.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-ulamek.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zad-ascii-grid.md
+        #       - file: zadania/uzupelniajace/obiektowosc/metody-specjalne/zadania/zpwjp-21-22/zad-raster.md
+        #       - file: zadania/uzupelniajace/obiektowosc/ceny/cena-operatory-podzial.md
+        #       - file: zadania/uzupelniajace/obiektowosc/egzaminy/licznik-slow-dodawanie.md
+        #       - file: zadania/uzupelniajace/obiektowosc/egzaminy/kat.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-07/metody-specjalne.md
+        #       - file: zadania/uzupelniajace/obiektowosc/warianty/zestaw-08/skladowe-klasy.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/08-obiektowe-metody-specjalne/08-podsumowanie.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/09-obiektowe-statyczne/09-podsumowanie.md
+        #       - file: zadania/uzupelniajace/obiektowosc/geometria/miasta-widoczne-z-trasy.md
+        #     - file: zadania/uzupelniajace/obiektowosc/zasoby.md
+        #     - title: Odpowiedzi do dodatkowych ćwiczeń
+        #       children:
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/02-referencje-kopie/02-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/06-obiektowe-enkapsulacja/06-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/07-obiektowe-polimorfizm/07-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/08-obiektowe-metody-specjalne/08-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/09-obiektowe-statyczne/09-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/domyslna-lista-odpowiedz.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-daty-trasy-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-punkty-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-eksperymenty-odpowiedzi.md
+        #       - file: zadania/uzupelniajace/obiektowosc/cwiczenia/referencje-kolejne-etapy-odpowiedzi.md
+        #     - file: zadania/uzupelniajace/obiektowosc/warianty/index.md
+        #       title: Zasady wariantów
+        #     title: Programowanie obiektowe
+        #   - file: zadania/uzupelniajace/projekty/index.md
+        #     title: Projekty
+        #     children:
+        #     - file: zadania/uzupelniajace/projekty/01-daty-zajec/projekt.md
+        #       title: Daty cotygodniowych zajęć
+        #     - file: zadania/uzupelniajace/projekty/02-wspolrzedne-geograficzne/projekt.md
+        #       title: Miasta w prostokątnym obszarze
+        #     - file: zadania/uzupelniajace/projekty/03-zawody/projekt.md
+        #       title: Podium zawodów sportowych
+        #     - file: zadania/uzupelniajace/projekty/04-oceny/projekt.md
+        #       title: Oceny końcowe uczniów
+        #       children:
+        #       - file: zadania/uzupelniajace/projekty/04-oceny/etapy.md
+        #         title: Wersja uproszczona — kolejne etapy
+        #     - file: zadania/uzupelniajace/projekty/05-ulamki/projekt.md
+        #       title: Działania na ułamkach
+        #     - file: zadania/uzupelniajace/projekty/06-zamowienia/projekt.md
+        #       title: Wartość zamówienia
+        #     - file: zadania/uzupelniajace/projekty/07-dzialki/projekt.md
+        #       title: Pole i cena działek
+        #       children:
+        #       - file: zadania/uzupelniajace/projekty/07-dzialki/etapy.md
+        #         title: Wersja uproszczona — kolejne etapy
+        #     - file: zadania/uzupelniajace/projekty/08-bilety/projekt.md
+        #       title: Bilety do muzeum
+        #       children:
+        #       - file: zadania/uzupelniajace/projekty/08-bilety/etapy.md
+        #         title: Wersja uproszczona — kolejne etapy
+        #     - file: zadania/uzupelniajace/projekty/09-filtrowanie-ofert/projekt.md
+        #       title: Filtrowanie ofert
+        #     - file: zadania/uzupelniajace/projekty/miasta-granice.md
+        #       title: Miasta między zadanymi granicami
+        #     - file: zadania/uzupelniajace/projekty/grupowanie-urodzin.md
+        #       title: Grupowanie osób według dat urodzenia
+        #     - file: zadania/uzupelniajace/projekty/modele-obiektowe.md
+        #       title: Projekty z modelami obiektowymi
+        #     - file: zadania/uzupelniajace/projekty/zasady-wariantow.md
+        #       title: Zasady wariantów z modelami i rozszerzoną walidacją
 
-          - file: zadania/uzupelniajace/jakosc-kodu/jakosc.md
-            title: DRY i SRP — dodatkowe ćwiczenia
-            children:
-              - file: zadania/uzupelniajace/jakosc-kodu/jakosc-odpowiedzi.md
-                title: DRY i SRP — dodatkowe ćwiczenia — odpowiedzi
-          - file: zadania/uzupelniajace/tkinter/tkinter-zadania.md
-            title: Dodatkowe zadania Tkinter
-            children:
-              - file: zadania/uzupelniajace/tkinter/tkinter-zdarzenia-slownik.md
-                title: Tkinter — fokus i minisłownik
-              - file: zadania/uzupelniajace/tkinter/tkinter-kolor-rgb.md
-                title: Tkinter — wybór koloru RGB
-              - file: zadania/uzupelniajace/tkinter/tkinter-uklad-okna.md
-                title: Tkinter — układ zmieniający się wraz z oknem
-              - file: zadania/uzupelniajace/tkinter/tkinter-wzrost-dialog.md
-                title: Tkinter — wzrost i wynik w osobnym oknie
-              - file: zadania/uzupelniajace/tkinter/tkinter-przycisk-zmiana-dzialania.md
-                title: Tkinter — przycisk zmieniający wygląd i działanie
+        #   - file: zadania/uzupelniajace/jakosc-kodu/jakosc.md
+        #     title: DRY i SRP — dodatkowe ćwiczenia
+        #     children:
+        #       - file: zadania/uzupelniajace/jakosc-kodu/jakosc-odpowiedzi.md
+        #         title: DRY i SRP — dodatkowe ćwiczenia — odpowiedzi
+        #   - file: zadania/uzupelniajace/tkinter/tkinter-zadania.md
+        #     title: Dodatkowe zadania Tkinter
+        #     children:
+        #       - file: zadania/uzupelniajace/tkinter/tkinter-zdarzenia-slownik.md
+        #         title: Tkinter — fokus i minisłownik
+        #       - file: zadania/uzupelniajace/tkinter/tkinter-kolor-rgb.md
+        #         title: Tkinter — wybór koloru RGB
+        #       - file: zadania/uzupelniajace/tkinter/tkinter-uklad-okna.md
+        #         title: Tkinter — układ zmieniający się wraz z oknem
+        #       - file: zadania/uzupelniajace/tkinter/tkinter-wzrost-dialog.md
+        #         title: Tkinter — wzrost i wynik w osobnym oknie
+        #       - file: zadania/uzupelniajace/tkinter/tkinter-przycisk-zmiana-dzialania.md
+        #         title: Tkinter — przycisk zmieniający wygląd i działanie
 
   static_files:
     - zadania/zestaw-05

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1",
+    "typ": "plyta",
+    "nazwa": "Album",
+    "cena": 2000
+  },
+  {
+    "id": "p1",
+    "typ": "plyta",
+    "nazwa": "Drugi egzemplarz",
+    "cena": 2000
+  }
+]

@@ -1,0 +1,3 @@
+Liczba paczek: 2
+b1: 1.6 kg; 2525 gr; 5 dni; delikatny: tak
+b2: 3 kg; 1200 gr; 10 dni; delikatny: nie

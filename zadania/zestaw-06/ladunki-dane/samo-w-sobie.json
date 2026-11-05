@@ -1,0 +1,10 @@
+[
+  {
+    "id": "a",
+    "typ": "pudelko",
+    "maks_ciezar": 10,
+    "zawartosc": [
+      "a"
+    ]
+  }
+]

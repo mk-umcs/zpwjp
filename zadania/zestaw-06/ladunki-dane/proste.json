@@ -1,0 +1,41 @@
+[
+  {
+    "id": "p1",
+    "typ": "plyta",
+    "nazwa": "Album",
+    "cena": 2000
+  },
+  {
+    "id": "j1",
+    "typ": "jablka",
+    "odmiana": "papierówka",
+    "ilosc": 1.5,
+    "cena": 350,
+    "trwalosc": 5
+  },
+  {
+    "id": "j2",
+    "typ": "jablka",
+    "odmiana": "szampion",
+    "ilosc": 3,
+    "cena": 400,
+    "trwalosc": 10
+  },
+  {
+    "id": "b1",
+    "typ": "pudelko",
+    "maks_ciezar": 2,
+    "zawartosc": [
+      "p1",
+      "j1"
+    ]
+  },
+  {
+    "id": "b2",
+    "typ": "pudelko",
+    "maks_ciezar": 4,
+    "zawartosc": [
+      "j2"
+    ]
+  }
+]

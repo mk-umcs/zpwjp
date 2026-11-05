@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "typ": "plyta",
+    "nazwa": "Album",
+    "cena": 2000
+  },
+  {
+    "id": "wew",
+    "typ": "pudelko",
+    "maks_ciezar": 10,
+    "zawartosc": [
+      "p1"
+    ]
+  },
+  {
+    "id": "a",
+    "typ": "pudelko",
+    "maks_ciezar": 10,
+    "zawartosc": [
+      "wew"
+    ]
+  },
+  {
+    "id": "b",
+    "typ": "pudelko",
+    "maks_ciezar": 10,
+    "zawartosc": [
+      "wew"
+    ]
+  }
+]
